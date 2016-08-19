@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E5272F70AEB20B9391B1B86925B9A2C919E1E639",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E5272F70AEB20B9391B1B86925B9A2C919E1E639" : 0,
+    "B9826D9D06EE59312D818FAE1DB67DF2D6275383" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CDB55125-5F1F-4AAC-B923-A9107F59B26A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E5272F70AEB20B9391B1B86925B9A2C919E1E639" : "NewVersionOfSchedule\/",
+    "B9826D9D06EE59312D818FAE1DB67DF2D6275383" : "app-schedule\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HH Schedule",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Schedule App\/schedule\/HH Schedule.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jack-crawford\/app-schedule.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9826D9D06EE59312D818FAE1DB67DF2D6275383"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jack-crawford\/NewVersionOfSchedule.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E5272F70AEB20B9391B1B86925B9A2C919E1E639"
+    }
+  ]
+}

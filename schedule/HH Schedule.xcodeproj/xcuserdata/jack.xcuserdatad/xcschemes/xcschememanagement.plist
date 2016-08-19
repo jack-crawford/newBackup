@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Glance - watch_schedule.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>HHCycle (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>HHCycle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Notification - watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Notification - watch_schedule.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>just_schedule.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>schedule.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>watch_schedule.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>040902321C6E440C007072C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>040902461C6E440C007072C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>040902511C6E440C007072C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042E2D631D3491460034B891</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>044EA4721D5CC9B9005847FA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>046D81E01C971A04008B2F22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>048A4B181C9868C1008CA6B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>048A4B2B1C9868CD008CA6B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04DE2D671C73FDB500850E25</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
