@@ -20,10 +20,6 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func swipe(_ sender: UISwipeGestureRecognizer) {
-        performSegue(withIdentifier: "home_view", sender: nil)
-    }
-    
 
     /*
     // MARK: - Navigation

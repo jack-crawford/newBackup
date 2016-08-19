@@ -14,52 +14,52 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var next_mod: UILabel!
     @IBOutlet weak var next_mod_time: UILabel!
     
-    var timer = Timer()
-
+    var timer = NSTimer()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
         //
         loadweb()
-        timer = Timer.scheduledTimer(timeInterval: 90, target: self, selector: #selector(TodayViewController.loadweb), userInfo: nil, repeats: true)
-        self.preferredContentSize = CGSize(width: 0, height: 60
+        timer = NSTimer.scheduledTimerWithTimeInterval(90, target: self, selector: "loadweb", userInfo: nil, repeats: true)
+        self.preferredContentSize = CGSizeMake(0, 60
         );
-
+        
         
     }
     func loadweb() {
         print("loadweb started")
-        if let url = URL(string: "http://hollandhall.net/hhmods/mobile.php") {
+        if let url = NSURL(string: "http://hollandhall.net/hhmods/mobile.php") {
             do {
-                let contents = try! NSString(contentsOf: url, usedEncoding: nil)
-                let data = contents.data(using: String.Encoding.utf8.rawValue, allowLossyConversion: false)!
+                let contents = try! NSString(contentsOfURL: url, usedEncoding: nil)
+                let data = contents.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
                 
                 do {
                     //the abbreviated weekday format
-                    let todaysDate:Date = Date()
-                    let dateFormatter:DateFormatter = DateFormatter()
+                    let todaysDate:NSDate = NSDate()
+                    let dateFormatter:NSDateFormatter = NSDateFormatter()
                     dateFormatter.dateFormat = "EEE"
-                    let DateInDayFormat:String = dateFormatter.string(from: todaysDate)
+                    let DateInDayFormat:String = dateFormatter.stringFromDate(todaysDate)
                     //the hour format
-                    let hourFormatter:DateFormatter = DateFormatter()
+                    let hourFormatter:NSDateFormatter = NSDateFormatter()
                     hourFormatter.dateFormat = "H"
-                    let DateInHourFormat:String = hourFormatter.string(from: todaysDate)
+                    let DateInHourFormat:String = hourFormatter.stringFromDate(todaysDate)
                     //the month format
-                    let monthFormatter:DateFormatter = DateFormatter()
+                    let monthFormatter:NSDateFormatter = NSDateFormatter()
                     monthFormatter.dateFormat = "MMMM"
-                    let DateInMonthFormat:String = monthFormatter.string(from: todaysDate)
+                    let DateInMonthFormat:String = monthFormatter.stringFromDate(todaysDate)
                     //the num day format
-                    let dayFormatter:DateFormatter = DateFormatter()
+                    let dayFormatter:NSDateFormatter = NSDateFormatter()
                     dayFormatter.dateFormat = "dd"
-                    let DateInNumDayFormat:String = dayFormatter.string(from: todaysDate)
+                    let DateInNumDayFormat:String = dayFormatter.stringFromDate(todaysDate)
                     //the weekday format
-                    let weekdayFormatter:DateFormatter = DateFormatter()
+                    let weekdayFormatter:NSDateFormatter = NSDateFormatter()
                     weekdayFormatter.dateFormat = "EEEE"
                     //the minute format
-                    let minuteFormatter:DateFormatter = DateFormatter()
+                    let minuteFormatter:NSDateFormatter = NSDateFormatter()
                     minuteFormatter.dateFormat = "m"
-                    let DateInMinuteFormat:String = minuteFormatter.string(from: todaysDate)
+                    let DateInMinuteFormat:String = minuteFormatter.stringFromDate(todaysDate)
                     //create current time as a weird number for the morning meeting code
                     let timeAsaString = DateInHourFormat + "." + DateInMinuteFormat;
                     let timeAsaNumber = Float(timeAsaString);
@@ -73,7 +73,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                     print(DateInHourFormat)
                     print("time as a number is " + timeAsaString);
                     
-                    if let jsonObject: AnyObject = try JSONSerialization.jsonObject(with: data, options: []) {
+                    if let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: []) {
                         if let dict = jsonObject as? NSDictionary {
                             print(dict)
                             let cyc = dict["cycleval"] as! String
@@ -86,7 +86,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                                 letter.text = "It's"
                                 next_mod.text = "The"
                                 next_mod_time.text = "Weekend"
-
+                                
                             } else {
                                 if mod == "no school" {
                                     letter.text = "No"
@@ -152,20 +152,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)) {
+    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
-
+        
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-
-        completionHandler(NCUpdateResult.newData)
+        
+        completionHandler(NCUpdateResult.NewData)
     }
     
 }
