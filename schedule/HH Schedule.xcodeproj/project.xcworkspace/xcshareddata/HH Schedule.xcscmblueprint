@@ -1,25 +1,25 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E5272F70AEB20B9391B1B86925B9A2C919E1E639",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A9E6B759A175D20FE58345AEAB2506AEB3A6AC38",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "E5272F70AEB20B9391B1B86925B9A2C919E1E639" : 0,
-    "B9826D9D06EE59312D818FAE1DB67DF2D6275383" : 0
+    "A9E6B759A175D20FE58345AEAB2506AEB3A6AC38" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CDB55125-5F1F-4AAC-B923-A9107F59B26A",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "E5272F70AEB20B9391B1B86925B9A2C919E1E639" : "NewVersionOfSchedule\/",
-    "B9826D9D06EE59312D818FAE1DB67DF2D6275383" : "app-schedule\/"
+    "E5272F70AEB20B9391B1B86925B9A2C919E1E639" : "..",
+    "A9E6B759A175D20FE58345AEAB2506AEB3A6AC38" : "newBackup\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "HH Schedule",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Schedule App\/schedule\/HH Schedule.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "schedule\/HH Schedule.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jack-crawford\/app-schedule.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jack-crawford\/newBackup.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9826D9D06EE59312D818FAE1DB67DF2D6275383"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A9E6B759A175D20FE58345AEAB2506AEB3A6AC38"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jack-crawford\/NewVersionOfSchedule.git",

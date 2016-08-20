@@ -10,6 +10,11 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var mod1_label: UILabel!
+    @IBOutlet weak var mod2_label: UILabel!
+    @IBOutlet weak var mod3_label: UILabel!
+    @IBOutlet weak var mod4_label: UILabel!
+    @IBOutlet weak var mod5_label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
