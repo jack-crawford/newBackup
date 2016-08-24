@@ -148,6 +148,7 @@
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="1fr-Gv-2ZQ" appends="YES" id="9bM-yG-oBS"/>
                             <outletCollection property="gestureRecognizers" destination="03T-Fe-nCk" appends="YES" id="Wk7-DB-DY3"/>
+                            <outletCollection property="gestureRecognizers" destination="uUa-9l-5BI" appends="YES" id="uCD-AZ-cju"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="fLi-Jd-Yf9"/>
@@ -172,8 +173,112 @@
                         <segue destination="dCN-I7-0nr" kind="modal" modalTransitionStyle="crossDissolve" id="Wu6-4T-0vN"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="uUa-9l-5BI">
+                    <connections>
+                        <segue destination="xxR-EH-Jvt" kind="modal" id="m0H-U8-Li1"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="99" y="330"/>
+        </scene>
+        <!--ViewControllerPhoto-->
+        <scene sceneID="GE9-fj-TO7">
+            <objects>
+                <viewController title="ViewControllerPhoto" id="xxR-EH-Jvt" customClass="ViewControllerPhoto" customModule="schedule" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wWY-JZ-psc"/>
+                        <viewControllerLayoutGuide type="bottom" id="AOb-BY-hmd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uPD-3c-iMW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3V-de-Ff2">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4pq-Jz-pLP"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.71764705880000002" green="0.0" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="Qmv-9U-gkS">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="4L4-n6-YvH">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vPJ-JQ-6GJ">
+                                                <rect key="frame" x="16" y="2" width="54" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="menubuttonwhite">
+                                                    <color key="titleColor" red="0.98452793949999995" green="1" blue="0.96769204119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="menubutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwl-9E-Oit"/>
+                                                </connections>
+                                            </button>
+                                            <connections>
+                                                <action selector="menubutton:" destination="BYZ-38-t0r" id="gcC-yq-7a0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="8xW-MG-vsV">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gs1-WP-8WK">
+                                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <state key="normal" title="X">
+                                                    <color key="titleColor" red="0.46274509800000002" green="0.67450980390000004" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loadImageButtonTapped:" destination="xxR-EH-Jvt" eventType="touchUpInside" id="sEF-UO-Yhd"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upper School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="op5-6W-LR1">
+                                <rect key="frame" x="75" y="20" width="170" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-Jm-7ox">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="H3V-de-Ff2" firstAttribute="leading" secondItem="uPD-3c-iMW" secondAttribute="leading" id="AOS-Ra-dFU"/>
+                            <constraint firstAttribute="trailing" secondItem="H3V-de-Ff2" secondAttribute="trailing" id="Chb-uX-HlM"/>
+                            <constraint firstItem="H3V-de-Ff2" firstAttribute="trailing" secondItem="5IW-Jm-7ox" secondAttribute="trailing" id="V3P-gv-Upu"/>
+                            <constraint firstItem="H3V-de-Ff2" firstAttribute="top" secondItem="wWY-JZ-psc" secondAttribute="bottom" id="Vfo-ej-K2l"/>
+                            <constraint firstItem="H3V-de-Ff2" firstAttribute="leading" secondItem="5IW-Jm-7ox" secondAttribute="leading" id="ePG-pu-HOk"/>
+                            <constraint firstItem="5IW-Jm-7ox" firstAttribute="top" secondItem="H3V-de-Ff2" secondAttribute="bottom" id="gwy-ex-vHy"/>
+                            <constraint firstItem="H3V-de-Ff2" firstAttribute="centerX" secondItem="op5-6W-LR1" secondAttribute="centerX" id="iDP-Kl-wYK"/>
+                            <constraint firstItem="5IW-Jm-7ox" firstAttribute="bottom" secondItem="AOb-BY-hmd" secondAttribute="top" id="k84-r2-sTe"/>
+                            <constraint firstItem="op5-6W-LR1" firstAttribute="top" secondItem="H3V-de-Ff2" secondAttribute="top" id="o1Q-QW-uPH"/>
+                            <constraint firstItem="op5-6W-LR1" firstAttribute="bottom" secondItem="H3V-de-Ff2" secondAttribute="bottom" id="o6g-kk-evE"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cMs-Sb-iY0" appends="YES" id="xdq-G1-nF2"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="5IW-Jm-7ox" id="wsu-VL-6SB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8YN-fF-qaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="cMs-Sb-iY0">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" id="IqE-QS-15K"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="100" y="1111"/>
         </scene>
         <!--full_view-->
         <scene sceneID="lEx-NA-NIC">
@@ -810,6 +915,6 @@
         <image name="menubuttonwhite" width="1799" height="1417"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hYZ-JE-Ch2"/>
+        <segue reference="IqE-QS-15K"/>
     </inferredMetricsTieBreakers>
 </document>

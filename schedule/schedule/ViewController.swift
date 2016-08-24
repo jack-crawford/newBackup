@@ -5,7 +5,6 @@
 //  Created by Jack Crawford on 2/12/16.
 //  Copyright © 2016 Jack Crawford. All rights reserved.
 //
-
 import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var touch_count: UILabel!
